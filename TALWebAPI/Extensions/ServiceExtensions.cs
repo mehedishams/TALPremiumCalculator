@@ -36,18 +36,18 @@ namespace TALWebAPI.Extensions
                 .AddMvc(options =>
                 {
                     // Adds the possible response types for each actions.
-                    options.Filters.Add(new ProducesResponseTypeAttribute(typeof(ValidationErrorModel),
-                        StatusCodes.Status400BadRequest));
-                    options.Filters.Add(new ProducesResponseTypeAttribute(typeof(ErrorModel),
-                        StatusCodes.Status401Unauthorized));
-                    options.Filters.Add(new ProducesResponseTypeAttribute(typeof(ErrorModel),
-                        StatusCodes.Status406NotAcceptable));
-                    options.Filters.Add(new ProducesResponseTypeAttribute(typeof(ErrorModel),
-                        StatusCodes.Status500InternalServerError));
-                    options.Filters.Add(new ProducesResponseTypeAttribute(typeof(ErrorModel),
-                        StatusCodes.Status404NotFound));
-                    options.Filters.Add(typeof(RequestLoggingActionFilter));
-                    options.Filters.Add(typeof(ValidationActionFilter));
+                    //options.Filters.Add(new ProducesResponseTypeAttribute(typeof(ValidationErrorModel),
+                    //    StatusCodes.Status400BadRequest));
+                    //options.Filters.Add(new ProducesResponseTypeAttribute(typeof(ErrorModel),
+                    //    StatusCodes.Status401Unauthorized));
+                    //options.Filters.Add(new ProducesResponseTypeAttribute(typeof(ErrorModel),
+                    //    StatusCodes.Status406NotAcceptable));
+                    //options.Filters.Add(new ProducesResponseTypeAttribute(typeof(ErrorModel),
+                    //    StatusCodes.Status500InternalServerError));
+                    //options.Filters.Add(new ProducesResponseTypeAttribute(typeof(ErrorModel),
+                    //    StatusCodes.Status404NotFound));
+                    //options.Filters.Add(typeof(RequestLoggingActionFilter));
+                    //options.Filters.Add(typeof(ValidationActionFilter));
                                         
                     options.ReturnHttpNotAcceptable = true;
                 })

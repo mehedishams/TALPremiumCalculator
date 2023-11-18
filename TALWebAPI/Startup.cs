@@ -31,7 +31,7 @@ namespace TALWebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddCustomMvc();
+            //services.AddCustomMvc();
             services.AddControllers();
             services.AddSqlContext(Configuration);
             services.AddCustomServices();
